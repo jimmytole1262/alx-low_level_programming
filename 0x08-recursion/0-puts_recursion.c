@@ -1,4 +1,7 @@
 #include "main.h"
+<<<<<<< HEAD
+
+=======
 /**
  * _puts_recursion - a function that prints a string
  *
@@ -6,6 +9,7 @@
  *
  * Return: the 0 value
  */
+>>>>>>> 44b3da17e9963f40952fcce4ff02849e700651a0
 void _puts_recursion(char *s)
 {
 	if (*s)

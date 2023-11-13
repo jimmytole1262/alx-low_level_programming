@@ -1,14 +1,23 @@
+/*
+ * File: 5-print_numbers.c
+ * Auth: Brennan D Baraban
+ */
+
 #include <stdio.h>
+
 /**
- * main - Entry point
- * Return: Always 0 (Success)
+ * main - Prints all single digit numbers of base 10 starting from 0.
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
-char c;
-for (c = '0'; c <= '9'; c++)
-putchar(c);
-putchar('\n');
-return (0);
-}
+	int num;
 
+	for (num = 0; num < 10; num++)
+		printf("%d", num);
+
+	printf("\n");
+
+	return (0);
+}

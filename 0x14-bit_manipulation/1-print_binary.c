@@ -1,9 +1,9 @@
-#include "main.h"
 
+#include "main.h"
 /**
- * _pow - calculates (base ^ power)
- * @base: base of the exponent
- * @power: power of the exponent
+ * _pow - calculating (base ^ power)
+ * @base: base of the exponent.
+ * @power: power of the exponent.
  *
  * Return: value of (base ^ power)
  */
@@ -19,10 +19,10 @@ unsigned long int _pow(unsigned int base, unsigned int power)
 }
 
 /**
- * print_binary - prints a number in binary notation
- * @n: number to print
+ * print_binary - prints a number in binary notation.
+ * @n: number to print.
  *
- * Return: void
+ * Return: void.
  */
 void print_binary(unsigned long int n)
 {

@@ -1,34 +1,34 @@
 #include "main.h"
 
 /**
- * print_triangle - entry point
- *
- * Description: Prints diagonals
- *@size: size of the triangle
- * Return: void
+ * print_triangle -  checks for checks for a digit (0 through 9).
+ * @size: size -  Variable
+ * Return: Always 0.
  */
-
 void print_triangle(int size)
 {
-	int row, hashes, spaces;
+	int x, y;
 
-	if (size <= 0)
+	if (size > 0)
 	{
-		_putchar('\n');
-	}
-	else
-	{
-		for (row = 1; row <= size; row++)
+		for (x = 1; x <= size; x++)
 		{
-			for (spaces = size - row; spaces >= 1; spaces--)
+			for (y = 1; y <= size; y++)
 			{
-				_putchar(' ');
-			}
-			for (hashes = 1; hashes <= row; hashes++)
-			{
-				_putchar('#');
+				if (y <= size - x)
+				{
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar('#');
+				}
 			}
 			_putchar('\n');
 		}
+	}
+	else
+	{
+		_putchar('\n');
 	}
 }
